@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/afk-echo/afk-echo.github.io/static/css/main.1c8e4819.css",
-    "main.js": "/afk-echo/afk-echo.github.io/static/js/main.2a92d6da.js",
-    "static/js/787.5c39024c.chunk.js": "/afk-echo/afk-echo.github.io/static/js/787.5c39024c.chunk.js",
-    "static/media/logo.svg": "/afk-echo/afk-echo.github.io/static/media/logo.034ef726eb08f413c8e9ff1b0abe7414.svg",
-    "index.html": "/afk-echo/afk-echo.github.io/index.html",
-    "main.1c8e4819.css.map": "/afk-echo/afk-echo.github.io/static/css/main.1c8e4819.css.map",
-    "main.2a92d6da.js.map": "/afk-echo/afk-echo.github.io/static/js/main.2a92d6da.js.map",
-    "787.5c39024c.chunk.js.map": "/afk-echo/afk-echo.github.io/static/js/787.5c39024c.chunk.js.map"
+    "main.css": "/static/css/main.1c8e4819.css",
+    "main.js": "/static/js/main.fee6572a.js",
+    "static/js/787.5c39024c.chunk.js": "/static/js/787.5c39024c.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.034ef726eb08f413c8e9ff1b0abe7414.svg",
+    "index.html": "/index.html",
+    "main.1c8e4819.css.map": "/static/css/main.1c8e4819.css.map",
+    "main.fee6572a.js.map": "/static/js/main.fee6572a.js.map",
+    "787.5c39024c.chunk.js.map": "/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c8e4819.css",
-    "static/js/main.2a92d6da.js"
+    "static/js/main.fee6572a.js"
   ]
 }
