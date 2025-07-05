@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inconsolata', 'Source Code Pro', 'sans-serif'],
+                }
+            }
+            }
+        }
+    </script>
+    <script>
+        window.onload = getTimeBasedGreeting;
+    </script>
+    </script>
+    <style>
+        td {
+            padding: 1rem;
+            border: 2px solid #333;
+            line-height: 1.75rem;
+        }
+        .no-border {
+            border: none;
+        }
+    </style>
+    <title>echo "Hello there!"</title>
+</head>
+    
+<body class="bg-[#181210] text-gray-100 text-md md:text-xl">
+    <main class="max-w-[940px] mx-auto px-8 md:px-0 leading-relaxed">
+        <div class="align-center">
+            <div class="grid grid-cols-5 text-sm md:text-base gap-0 text-orange-400 text-align-center py-1">
+                <div class="border-2 border-r-0 border-[#444] flex items-center justify-center py-1">
+                    <a href="#about" class="text-align-center">About</a>
+                </div>
+                <div class="border-2 border-r-0  border-[#444] flex items-center justify-center py-1">
+                        <a href="#skills">Skills</a>
+                </div>
+                <div class="border-2 border-r-0  border-[#444] flex items-center justify-center py-1">
+                        <a href="#education">Degree</a>
+                </div>
+                <div class="border-2 border-r-0  border-[#444] flex items-center justify-center py-1">
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="border-2 border-[#444] flex items-center justify-center py-1">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-[20vh] mt-10 flex align-center justify-center">
+            <h1 class="text-5xl text-center my-auto" id="greeting">Hello there!</h1>
+        </div>
+        <div class="mb-8 mt-8" id="about">
+            <h2 class="text-orange-400 font-bold text-3xl mb-4 pb-4 border-b-2 border-[#444]">
+                About
+            </h2>
+            <p>
+                Hi there! I'm Aryan, a college student, technology enthusiast, melomaniac, aesthete, DIY lover, novice chess player, and all-round geek. My interests are dynamic, diverse and span multiple domains like cybersecurity, AI, web development and hobbyist electronics. 
+            </p>
+        </div>    
+        
+        <div class="mb-8" id="skills">
+            <h2 class="text-orange-400 font-bold text-3xl mb-4 pb-4 border-b-2 border-[#444]">
+                Skills
+            </h2>
+            <p class="mb-4">
+                I've worked with (and am familiar with) the following software/hardware tools on my journey as an aspiring developer:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="align-top border-2 border-[#444] p-4">
+                    <h3 class="text-orange-400 mb-2">Programming/Scripting Languages</h3>
+                    <p>- Python [python3]<br>
+                    - C<br>
+                    - JavaScript/TypeScript<br>
+                    - C++<br>
+                    - Kotlin<br>
+                    - Dart<br>
+                    - PowerShell<br>
+                    - Bash<br>
+                    - Java<br>
+                </div>
+                <div class="align-top border-2 border-[#444] p-4">
+                    <h3 class="text-orange-400 mb-2">Frameworks/Libraries</h3>
+                    <p>
+                    - Svelte<br>
+                    - React.js<br>
+                    - fastapi<br>
+                    - Flutter<br>
+                    - numpy<br>
+                    - reflex<br>
+                    - Electron<br>
+                    - Keras [For Deep Learning]<br>
+                    - transformers [For LLM fine-tuning]<br>
+                    </p>
+                </div>
+                <div class="align-top border-2 border-[#444] p-4">
+                    <h3 class="text-orange-400 mb-2">Other Tools</h3>
+                    <p>- ollama [for LLMs]<br>
+                    - HTML/CSS<br>
+                    - MySQL<br>
+                    - sqlite3<br>
+                    - MongoDB<br>
+                    - node.js<br>
+                    - Arduino<br>
+                    - Raspberry Pi<br>
+                    - NVIDIA Jetson Nano<br>
+                    - Linux [Garuda Linux]<br>
+                </div>
+            </div>
+            <p class="mt-4">
+                You can check out some of the projects that I've worked on <a href="#projects" class="text-orange-400 hover:underline"> here. </a>
+            </p>
+        </div>
+        
+        <div class="mb-4 flex-vertical justify-center items-center" id="education">
+            <h2 class="text-orange-400 font-bold text-3xl mb-4 pb-4 border-b-2 border-[#444]">
+                Degree and Education
+            </h2>
+            <p>
+                I'm currently in my sixth semester, pursuing a B.E in Computer Science and Engineering at <a class="text-orange-400 hover:underline" href="https://rvce.edu.in"> RV College of Engineering, Bengaluru, India</a>. I regularly participate in multiple events hosted by various clubs across campus, like competitive programming contests, CTFs, upskilling events, and social outreach programmes.
+            </p>
+            <table class="table-auto my-8 mx-auto border-2 border-[#444]">
+                <tr>
+                    <td class="font-bold text-orange-400">College</td>
+                    <td>R V College of Engineering, Bengaluru</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Program</td>
+                    <td>B.E in Computer Science and Engineering</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Year</td>
+                    <td>3 [III]</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Ongoing Semester</td>
+                    <td>6 [VI]</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Current CGPA</td>
+                    <td>9.59/10 [no backlogs]</td>
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Member of Clubs</td>
+                    <td>Coding Club, RVCE<br>
+                    Rotaract Club, RVCE<br>
+                    National Service Scheme, RVCE
+                </tr>
+                <tr>
+                    <td class="font-bold text-orange-400">Secondary Education Results</td>
+                    <td>
+                        [2020] AISSE - 97.6%<br>
+                        [2022] AISSCE - 98.6% (PCMC) 
+                    </td>
+                </tr>
+            </table>
+        </div>    
+        <div class="mb-8" id="projects">
+            <h2 class="text-orange-400 text-3xl font-bold mb-4 pb-4 border-b-2 border-[#444]">
+                Projects
+            </h2>
+            <p>Listed below are some of the projects that I've recently worked on/been a part of.</p>
+            <table class="table-auto my-8 mx-auto border-2 border-[#444]">
+                <tr>
+                    <td class="font-bold text-orange-400">Project Title (with time period)</td>
+                    <td class="font-bold text-orange-400">Brief description</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="mb-4">GenAI-Powered Smart App for Crop Rotation Forecasting</p>
+                        <p class="text-sm">[April 2025 - June 2025]</p>
+                    <td>
+                        - Developed a multilingual, cross-platform app for crop predictions and price forecasting for crop rotation. <br>
+                        - Used prompt-engineered LLaMa-3 to give crop suggestions for crop rotation based on environmental factors, past land usage history, and other relevant details. <br>
+                        - Took natural language inputs from the user with both text and speech. <br>
+                        - Implemented a per-market crop price forecasting system using Random Forest Regressors and the <a class="text-orange-400 hover:underline" href="https://www.data.gov.in/resource/variety-wise-daily-market-prices-data-commodity">AgMarkNet dataset</a> provided by the Government of India.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="mb-4">Modular Architecture for Multi-Lingual Augmentation of LLM Responses</p>
+                        <p class="text-sm">[December 2024 - February 2025]</p>
+                    <td>
+                        - Developed and implemented a modular 4-layer architecture to adapt an LLM to generate outputs intended for a different target language. <br>
+                        - Fine-tuned a LLaMa-3 model for use in the above architecture, intended for use with various regional Indian languages.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="mb-4">An Extensible and Scalable Fleet Monitoring System</p>
+                        <p class="text-sm">[March 2024 - September 2024]</p>
+                    <td>
+                        - Designed and developed a fleet tracking system for ATDXT Pvt. Ltd, Bengaluru, as part of a consultancy project under the Department of CSE, RVCE. <br>
+                        - Involved developing hardware as well as software.<br>
+                        - Individual vehicle modules were built using a Raspberry Pi Zero 2 W with GSM SIM900A module, a DS3231 (RTC), and a GPS neo6M module. <br>
+                        - Admin Web UI and DB were hosted on Firebase.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="mb-4">E-Waste Processing and Segregation using Computer Vision and Robotics</p>
+                        <p class="text-sm">[May 2023 - ongoing]</p>
+                    </td>
+                    <td>
+                        - Funded by and in progress as part of the ARTPARK program (an initiative of the Indian Institute of Science, Bengaluru)<br>
+                        - Developed a robotic system to categorize, classify, and segregate various types of e-waste from a given e-waste sample.<br>
+                        - Created a labelled dataset for e-waste comprised of 1000+ images.<br>
+                        - Used Raspberry Pi 4B and NVIDIA Jetson Nano boards to perform computer-vision based inference.<br>
+                        - A robotic arm and conveyor belt system was used to segregate the e-waste sample.
+                    </td>
+                </tr>
+            </table>
+            <p> 
+                I also work on a few hobby projects. They can usually be found on my <a href="https://github.com/afk-echo" class="text-orange-400 hover:underline">GitHub</a> page. Some of them are listed below:
+            </p>
+            <div class="my-4">
+                <p> - <strong>Refresh</strong>: An android app that automates repetitive checking of a webpage for updates. </p>
+                <p> - <strong>discord-py-interpreter</strong>: A self-hosted python interpreter that can be operated and used from within a Discord channel. </p>
+                <p> - <strong>ConsoleToStr</strong>: A lightweight module written in Python that converts STDOUT and STDERR outputs into valid python strings. </p>
+            </div>
+        </div>  
+        <div class="mb-8" id="contact">
+            <h2 class="text-orange-400 font-bold text-3xl mb-4 pb-4 border-b-2 border-[#444]">
+                Contact
+            </h2>
+            <p>
+                Want to discuss something? Let's get in touch! I am reachable via <a href="mailto:aryanjha.cs22@rvce.edu.in" class="text-orange-400 hover:underline">e-mail</a>. You could also check out my profiles on <a href="#" class="text-orange-400 hover:underline">LinkedIn</a>, <a href="www.linkedin.com/in/aryan-jha-089a39326" class="text-orange-400 hover:underline">GitHub</a>, or <a href="https://leetcode.com/u/afk-echo/" class="text-orange-400 hover:underline">LeetCode</a> if you prefer.
+            </p>
+        </div>    
+        <div class="text-gray-600 text-center text-sm mb-8">This page was made with HTML, Tailwind CSS, and JS, on Garuda Linux. Thanks for stopping by. </div>
+    </main>
+</body>
+
+</html>
